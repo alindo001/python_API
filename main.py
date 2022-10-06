@@ -4,8 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware  #imports middelware for hand
 
 app = FastAPI()
 
-
-
+#calls middleware that handles cors
+#the * declaration says that all origins are allowed
 app.add_middleware(
     CORSMiddleware,
     allow_origins=['*']
